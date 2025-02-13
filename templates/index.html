@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <i class="fas fa-robot"></i>
+            <span>DeepSeek Chat</span>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Chat with DeepSeek</h1>
+        <form id="chat-form">
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Enter your message..." required>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Response Area -->
+        <div id="response-area">
+            <div class="response-message">No response yet.</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Powered by DeepSeek
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

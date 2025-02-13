@@ -1,0 +1,1 @@
+docker run -d -p 5000:5000 -e DEEPSEEK_API_KEY=sk-dc4476dc504a4868a3496ed45bdd93fd --name deepseek-container deepseek-app
